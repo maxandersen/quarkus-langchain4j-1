@@ -6,7 +6,7 @@ import io.quarkiverse.langchain4j.RegisterAiService;
 import io.smallrye.mutiny.Multi;
 import jakarta.enterprise.context.SessionScoped;
 
-@RegisterAiService(retrievalAugmentor = AugmentorExample.class)
+@RegisterAiService(retrievalAugmentor = AugmentorExample.class, tools= {Computer.class})
 @SessionScoped
 public interface Bot {
 

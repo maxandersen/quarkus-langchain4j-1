@@ -74,6 +74,12 @@
 
         <!-- Minimal dependencies to constrain the build -->
         <dependency>
+            <groupId>io.quarkiverse.ngrok</groupId>
+            <artifactId>quarkus-ngrok</artifactId>
+            <version>1.6.0</version>
+            
+        </dependency>
+        <dependency>
             <groupId>io.quarkiverse.langchain4j</groupId>
             <artifactId>quarkus-langchain4j-openai-deployment</artifactId>
             <version>${quarkus-langchain4j.version}</version>
@@ -90,8 +96,8 @@
             <groupId>io.quarkiverse.langchain4j</groupId>
             <artifactId>quarkus-langchain4j-redis-deployment</artifactId>
             <version>${quarkus-langchain4j.version}</version>
-            <scope>test</scope>
             <type>pom</type>
+            <scope>test</scope>
             <exclusions>
                 <exclusion>
                     <groupId>*</groupId>
